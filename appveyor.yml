@@ -5,7 +5,7 @@ install:
   - docker-switch-linux
 
 build_script:
-  - docker build -t mcred/ubuntu-test --platform linux .
+  - docker build -t mcred/ubuntu-test .
 
 test_script:
-  - docker run --platform linux mcred/ubuntu-test
+  - docker run mcred/ubuntu-test
