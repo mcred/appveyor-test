@@ -1,10 +1,8 @@
 version: 1.0.{build}
 image: Visual Studio 2017
 
-install:
-  - docker-switch-linux
-
 build_script:
+  - docker-switch-linux
   - docker build -t mcred/ubuntu-test .
 
 test_script:
