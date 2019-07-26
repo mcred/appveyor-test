@@ -5,7 +5,7 @@ install:
   - docker version
 
 build_script:
-  - docker build -t mcred/ubuntu-test .
+  - docker build -t mcred/ubuntu-test --platform linux .
 
 test_script:
-  - docker run mcred/ubuntu-test
+  - docker run --platform linux mcred/ubuntu-test
