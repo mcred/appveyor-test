@@ -2,7 +2,7 @@ version: 1.0.{build}
 image: Visual Studio 2017
 
 install:
-  - docker images
+  - docker images --platform linux
 
 #build_script:
 #  - docker build -t mcred/ubuntu-test --platform linux .
