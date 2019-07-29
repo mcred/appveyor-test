@@ -6,7 +6,7 @@ build_script:
   - choco install unzip wget
   - docker build -t mcred/ubuntu-test .
   - wget https://services.gradle.org/distributions/gradle-5.5.1-bin.zip -P /tmp
-  - sudo unzip -d /opt/gradle /tmp/gradle-*.zip
+  - unzip -d /opt/gradle /tmp/gradle-*.zip
   - export GRADLE_HOME=/opt/gradle/gradle-5.5
   - export PATH=${GRADLE_HOME}/bin:${PATH}
   - unzip -o -d ./ test-server-develop.zip
