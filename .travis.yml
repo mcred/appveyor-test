@@ -1,0 +1,10 @@
+dist: bionic
+addons:
+  apt:
+    sources:
+      - docker-bionic
+    packages:
+      - docker
+script:
+  - docker build -t mcred/ubuntu-test .
+  - docker run mcred/ubuntu-test
