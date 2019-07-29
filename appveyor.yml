@@ -3,7 +3,13 @@ image: Windows Server 2019
 
 build_script:
   - docker-switch-linux
+  - choco install unzip
   - docker build -t mcred/ubuntu-test .
+  - wget https://services.gradle.org/distributions/gradle-5.5.1-bin.zip -P /tmp
+  - sudo unzip -d /opt/gradle /tmp/gradle-*.zip
+  - export GRADLE_HOME=/opt/gradle/gradle-5.5
+  - export PATH=${GRADLE_HOME}/bin:${PATH}
+  - unzip -o -d ./ test-server-develop.zip
 
 test_script:
-  - docker run mcred/ubuntu-test
+  - cd titan-server-develop-b0dce9140dd903873a27be26bc1fc7bf02b6d53a && ./gradlew check assemble endtoendTest
