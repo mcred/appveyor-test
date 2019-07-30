@@ -6,8 +6,9 @@ build_script:
   - choco install unzip gradle graalvm
   - docker build -t mcred/ubuntu-test .
   - unzip -o -d ./ test-server-develop.zip
-  - SET JAVA_HOME=C:\Program Files\GraalVM\graalvm-ce-19.1.0\bin
-  - SET PATH=%JAVA_HOME%\bin;%PATH%
+  - SET JAVA_HOME=C:\Program Files\GraalVM\graalvm-ce-19.1.0\jre
+  - SET GRAAL_BIN=C:\Program Files\GraalVM\graalvm-ce-19.1.0\bin
+  - SET PATH=%GRAAL_BIN%;%PATH%
 
 test_script:
   - cd titan-server-develop-b0dce9140dd903873a27be26bc1fc7bf02b6d53a
