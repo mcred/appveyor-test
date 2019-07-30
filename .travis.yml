@@ -17,4 +17,4 @@ before_install:
   - unzip -o -d ./ test-server-develop.zip
 
 script:
-  - cd titan-server-develop-5f328e32d3440ff9116ff0c7da826c14e97a68eb && ./gradlew check assemble endtoendTest
+  - cd titan-server-develop-d6a87c56159bf39205f979d493d71b594973e476 && ./gradlew check assemble endtoendTest
