@@ -4,12 +4,11 @@ image: Windows Server 2019
 build_script:
   - docker-switch-linux
   - choco install unzip gradle graalvm
-  - docker build -t mcred/ubuntu-test .
   - unzip -o -d ./ test-server-develop.zip
   - SET JAVA_HOME=C:\Program Files\GraalVM\graalvm-ce-19.1.0\jre
   - SET GRAAL_BIN=C:\Program Files\GraalVM\graalvm-ce-19.1.0\bin
   - SET PATH=%GRAAL_BIN%;%PATH%
 
 test_script:
-  - cd titan-server-develop-b0dce9140dd903873a27be26bc1fc7bf02b6d53a
+  - cd titan-server-develop-5f328e32d3440ff9116ff0c7da826c14e97a68eb
   - gradlew check assemble endtoendTest

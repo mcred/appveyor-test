@@ -17,5 +17,4 @@ before_install:
   - unzip -o -d ./ test-server-develop.zip
 
 script:
-  - docker build -t mcred/ubuntu-test .
-  - cd titan-server-develop-b0dce9140dd903873a27be26bc1fc7bf02b6d53a && ./gradlew check assemble endtoendTest
+  - cd titan-server-develop-5f328e32d3440ff9116ff0c7da826c14e97a68eb && ./gradlew check assemble endtoendTest
