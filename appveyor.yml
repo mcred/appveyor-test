@@ -11,4 +11,4 @@ build_script:
 
 test_script:
   - cd titan-server-develop-d6a87c56159bf39205f979d493d71b594973e476
-  - gradlew check assemble endtoendTest
+  - gradlew check assemble endtoendTest --info
