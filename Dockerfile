@@ -1,2 +1,2 @@
 FROM ubuntu:latest
-RUN uname -r
+RUN uname -a
