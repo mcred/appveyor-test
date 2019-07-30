@@ -10,5 +10,6 @@ build_script:
 #  - SET PATH=%JAVA_HOME%\bin;%PATH%
 
 test_script:
-  - cd titan-server-develop-b0dce9140dd903873a27be26bc1fc7bf02b6d53a
+  - java -version
+#  - cd titan-server-develop-b0dce9140dd903873a27be26bc1fc7bf02b6d53a
 #  - gradlew check assemble endtoendTest
