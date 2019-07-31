@@ -11,7 +11,7 @@ build_script:
   #- SET PATH=%GRAAL_BIN%;%PATH%
 
 test_script:
-  - cd /d/
+  - cd /
   - pwd
   - ls
   #- gradlew check assemble endtoendTest --info
