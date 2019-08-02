@@ -10,5 +10,4 @@ build_script:
   - SET PATH=%GRAAL_BIN%;%PATH%
 
 test_script:
-  - cd D:/titan-server-develop-d6a87c56159bf39205f979d493d71b594973e476
-  - gradlew assemble endtoendTest
+  - D:\titan-server-develop-d6a87c56159bf39205f979d493d71b594973e476\gradlew assemble endtoendTest
